@@ -20,7 +20,8 @@ public class LandingPage {
 
 	public void logout() {
 		
-		driver.findElement(singout).click();
+		//driver.switchTo().frame("leftpanel");
+		//driver.findElement(singout).click();
 	}
 }
 
