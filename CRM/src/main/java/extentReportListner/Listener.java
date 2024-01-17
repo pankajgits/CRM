@@ -28,6 +28,10 @@ public class Listener implements ITestListener {
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
 		extentTest.log(Status.PASS, "Successfull");
+		extentTest.pass("Test Pass",
+				  MediaEntityBuilder
+				  .createScreenCaptureFromPath(TestUtils.takeScreenShot(factory.BrowserFactory.
+				  driver)) .build());
 	}
 
 	public void onTestFailure(ITestResult result) {

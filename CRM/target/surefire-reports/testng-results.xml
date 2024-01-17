@@ -26,12 +26,12 @@
       <![CDATA[LOG:INFO- Browser Closed]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-01-16T01:07:15 IST" name="Suite" finished-at="2024-01-16T01:07:39 IST" duration-ms="24527">
+  <suite started-at="2024-01-17T23:07:43 IST" name="Suite" finished-at="2024-01-17T23:08:09 IST" duration-ms="25601">
     <groups>
     </groups>
-    <test started-at="2024-01-16T01:07:15 IST" name="Test" finished-at="2024-01-16T01:07:39 IST" duration-ms="24527">
+    <test started-at="2024-01-17T23:07:43 IST" name="Test" finished-at="2024-01-17T23:08:09 IST" duration-ms="25601">
       <class name="testCases.LoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.LoginTest@3adcc812]" started-at="2024-01-16T01:07:15 IST" name="setup" finished-at="2024-01-16T01:07:27 IST" duration-ms="12457" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.LoginTest@3adcc812]" started-at="2024-01-17T23:07:43 IST" name="setup" finished-at="2024-01-17T23:07:56 IST" duration-ms="13209" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,11 +48,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="invalidLoginToCRM()[pri:1, instance:testCases.LoginTest@3adcc812]" started-at="2024-01-16T01:07:27 IST" name="invalidLoginToCRM" finished-at="2024-01-16T01:07:28 IST" duration-ms="211" status="PASS">
+        <test-method signature="invalidLoginToCRM()[pri:1, instance:testCases.LoginTest@3adcc812]" started-at="2024-01-17T23:07:56 IST" name="invalidLoginToCRM" finished-at="2024-01-17T23:07:57 IST" duration-ms="330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginToCRM -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginTest@3adcc812]" started-at="2024-01-16T01:07:28 IST" name="tearDown" finished-at="2024-01-16T01:07:28 IST" duration-ms="204" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginTest@3adcc812]" started-at="2024-01-17T23:07:57 IST" name="tearDown" finished-at="2024-01-17T23:07:58 IST" duration-ms="334" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[LOG:INFO- Running After Class- Closing Browser]]>
@@ -62,7 +62,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.LoginTest@3adcc812]" started-at="2024-01-16T01:07:28 IST" name="setup" finished-at="2024-01-16T01:07:39 IST" duration-ms="11268" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.LoginTest@3adcc812]" started-at="2024-01-17T23:07:58 IST" name="setup" finished-at="2024-01-17T23:08:08 IST" duration-ms="10587" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -79,11 +79,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validLoginToCRM()[pri:2, instance:testCases.LoginTest@3adcc812]" started-at="2024-01-16T01:07:39 IST" name="validLoginToCRM" finished-at="2024-01-16T01:07:39 IST" duration-ms="5" status="PASS">
+        <test-method signature="validLoginToCRM()[pri:2, instance:testCases.LoginTest@3adcc812]" started-at="2024-01-17T23:08:08 IST" name="validLoginToCRM" finished-at="2024-01-17T23:08:08 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginToCRM -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginTest@3adcc812]" started-at="2024-01-16T01:07:39 IST" name="tearDown" finished-at="2024-01-16T01:07:39 IST" duration-ms="256" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginTest@3adcc812]" started-at="2024-01-17T23:08:08 IST" name="tearDown" finished-at="2024-01-17T23:08:09 IST" duration-ms="323" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[LOG:INFO- Running After Class- Closing Browser]]>
