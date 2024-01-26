@@ -18,7 +18,7 @@ public class LoginTest extends TestBase {
      
      
     
-	@Test(priority=1, description="ELEM1396_testing invalid login test")
+	@Test(priority=1,groups= {"smoke"}, description="ELEM1396_testing invalid login test")
 	public void invalidLoginToCRM() {
 		
 		LoginPage loginPage = new LoginPage(driver); 
@@ -26,14 +26,14 @@ public class LoginTest extends TestBase {
 		
 	}
 	
-	@Test(priority=2, description="ELEM1397_testing invalid login test")
+	@Test(priority=2,groups= {"smoke"}, description="ELEM1397_testing invalid login test")
 	public void validLoginToCRMELEM1397() {
 		
-		Assert.assertTrue(true);
-		/*
-		 * LoginPage loginPage = new LoginPage(driver); LandingPage landingPage;
-		 * landingPage = loginPage.validLoginToCRM(username, pw); landingPage.logout();
-		 */
+		
+		
+		  LoginPage loginPage = new LoginPage(driver); LandingPage landingPage;
+		  landingPage = loginPage.validLoginToCRM(username, pw); landingPage.logout();
+		  Assert.assertTrue(false);
 	
 	}
 	

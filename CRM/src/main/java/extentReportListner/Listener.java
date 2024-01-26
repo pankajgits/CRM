@@ -1,5 +1,7 @@
 package extentReportListner;
 
+import java.util.Arrays;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -27,11 +29,16 @@ public class Listener implements ITestListener {
 
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
-		extentTest.log(Status.PASS, "Successfull");
-		extentTest.pass("Test Pass",
-				  MediaEntityBuilder
-				  .createScreenCaptureFromPath(TestUtils.takeScreenShot(factory.BrowserFactory.
-				  driver)) .build());
+		
+		extentTest
+				.info(result.getMethod().getDescription())
+				.info(Arrays.toString(result.getMethod().getGroups()))
+				.log(Status.PASS, "Successfull")
+				.pass(MediaEntityBuilder
+					.createScreenCaptureFromPath(TestUtils.takeScreenShot(factory.BrowserFactory.
+						  driver)) .build());
+		
+			
 	}
 
 	public void onTestFailure(ITestResult result) {
@@ -40,7 +47,9 @@ public class Listener implements ITestListener {
 		  extentTest.fail("Test Failed " + result.getThrowable().getMessage(),
 		  MediaEntityBuilder
 		  .createScreenCaptureFromPath(TestUtils.takeScreenShot(factory.BrowserFactory.
-		  driver)) .build());
+		  driver)) .build())
+		  .info(result.getMethod().getDescription())
+		  .info(Arrays.toString(result.getMethod().getGroups()));
 		 
 		//extentTest.fail(result.getThrowable());
 	}
