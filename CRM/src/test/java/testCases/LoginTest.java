@@ -26,7 +26,7 @@ public class LoginTest extends TestBase {
 		
 	}
 	
-	@Test(priority=2, description="ELEM1396_testing invalid login test")
+	@Test(priority=2, description="ELEM1397_testing invalid login test")
 	public void validLoginToCRMELEM1397() {
 		
 		Assert.assertTrue(true);
