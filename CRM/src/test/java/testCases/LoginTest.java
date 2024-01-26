@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 
 import base.TestBase;
+
 import pages.LandingPage;
 import pages.LoginPage;
 import com.aventstack.extentreports.ExtentReports;
@@ -15,7 +16,9 @@ public class LoginTest extends TestBase {
     
      
      
-	@Test(priority=1)
+     
+    
+	@Test(priority=1, description="ELEM1396_testing invalid login test")
 	public void invalidLoginToCRM() {
 		
 		LoginPage loginPage = new LoginPage(driver); 
@@ -23,8 +26,8 @@ public class LoginTest extends TestBase {
 		
 	}
 	
-	@Test(priority=2)
-	public void validLoginToCRM() {
+	@Test(priority=2, description="ELEM1396_testing invalid login test")
+	public void validLoginToCRMELEM1397() {
 		
 		Assert.assertTrue(true);
 		/*
