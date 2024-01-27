@@ -17,6 +17,7 @@
   </properties>
   
   <dependencies>
+
 		<dependency>
 		    <groupId>org.seleniumhq.selenium</groupId>
 		    <artifactId>selenium-java</artifactId>
@@ -49,8 +50,8 @@
 		</dependency>
 			
  </dependencies>
-  
-  
+
+	 
   <build>
 	  
 	  <plugins>
@@ -72,8 +73,7 @@
    
 </plugins>
 
-
   </build>
-    
+
  
 </project>
