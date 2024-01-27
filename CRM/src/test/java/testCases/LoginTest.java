@@ -11,30 +11,32 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 public class LoginTest extends TestBase {
-     String username = "Selenium_50";
-     String pw ="abcd@123456";
+     String username = "slitetablet955@gmail.com";
+     String pw ="slite@12";
     
-     
-     
-     
-    
-	@Test(priority=1,groups= {"smoke"}, description="ELEM1396_testing invalid login test")
-	public void invalidLoginToCRM() {
+	@Test(priority=1,groups= {"smoke"}, description="ELEM1396_Verify login Functionality")
+	public void verifyLoginToApp() {
 		
 		LoginPage loginPage = new LoginPage(driver); 
 		loginPage.invalidLoginToCRM(username, pw);		
 		
 	}
 	
-	@Test(priority=2,groups= {"smoke"}, description="ELEM1397_testing invalid login test")
-	public void validLoginToCRMELEM1397() {
-		
-		
+	@Test(priority=2,groups= {"smoke"}, description="ELEM1391_Verify login page title")
+	public void verifyLoginPageTitleELEM1391() {
+				
+		  LoginPage loginPage = new LoginPage(driver); LandingPage landingPage;
+		  landingPage = loginPage.validLoginToCRM(username, pw); 
+		  landingPage.logout();	
+	}
+	
+	@Test(priority=3,groups= {"sanity", "smoke"}, description="ELEM1392_Verify logo")
+	public void validLoginToCRMELEM1392() {
 		
 		  LoginPage loginPage = new LoginPage(driver); LandingPage landingPage;
-		  landingPage = loginPage.validLoginToCRM(username, pw); landingPage.logout();
-		  Assert.assertTrue(false);
-	
+		  landingPage = loginPage.validLoginToCRM(username, pw); 
+		  landingPage.logout();
+			
 	}
 	
 	

@@ -19,7 +19,7 @@ public class TestBase {
 	@BeforeMethod
 	public  void  setup(String browser) 
 	{
-		Reporter.log("LOG:INFO- Running Before Class- Setting Up Browser", true);
+		Reporter.log("LOG:INFO- Running Before method- Setting Up Browser", true);
 	
 		//driver=BrowserFactory.getBrowser(ConfigReader.getProperty("browser"), ConfigReader.getProperty("appURL"));
 		driver=BrowserFactory.getBrowser(browser, ConfigReader.getProperty("appURL"));
@@ -32,7 +32,7 @@ public class TestBase {
 	@AfterMethod
 	public void tearDown() 
 	{
-		Reporter.log("LOG:INFO- Running After Class- Closing Browser", true);
+		Reporter.log("LOG:INFO- Running After method- Closing Browser", true);
 		
 		BrowserFactory.quitBrowser(driver);
 		
