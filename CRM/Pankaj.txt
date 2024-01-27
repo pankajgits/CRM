@@ -1,49 +1,21 @@
+import java.util.Scanner;
 
-235353
-4534534534534
-534535345
-235353
-4534534534534
-534535345
-235353
-4534534534534
-534535345
-235353
-4534534534534
-534535345
-235353
-4534534534534
-534535345
-235353
-4534534534534
-534535345
+public class Addition {
+    public static void main(String[] args) {
+        // Create Scanner object to read input
+        Scanner scanner = new Scanner(System.in);
 
+        // Input two numbers from the user
+        System.out.print("Enter the first number: ");
+        double num1 = scanner.nextDouble();
+        
+        System.out.print("Enter the second number: ");
+        double num2 = scanner.nextDouble();
 
-In a dream I spoke with the Cyprus-born,
+        // Perform addition
+        double sumResult = num1 + num2;
 
-      And said to her,
-
-“Mother of beauty, mother of joy,
-
-Why hast thou given to men
-
- 
-
-“This thing called love, like the ache of a wound
-
-      In beauty's side,
-
-To burn and throb and be quelled for an hour
-
-And never wholly depart?“
-
-
-sfasasd
-asd
-asdas
-das
-d
-asd
-fas
-fa
-
+        // Display the result
+        System.out.println("The sum of " + num1 + " and " + num2 + " is: " + sumResult);
+    }
+}
